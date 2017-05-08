@@ -1,4 +1,6 @@
 # node-red-contrib-postgrestor
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/HySoaKa/node-red-contrib-postgrestor.svg)](https://greenkeeper.io/)
 Postgrestor :space_invader: is a [**Node-RED**](http://nodered.org/) node allowing basic access to [**Postgres**](https://www.postgresql.org/) :elephant: database.
 
 Postgrestor sets up a console to execute queries against the configured database.
