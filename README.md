@@ -49,3 +49,21 @@ You will need to restart Node-RED for it to pick-up [**Postgrestor**](https://gi
 <img src="http://i.imgur.com/WTpmbT5.png" width="600">
 <img src="http://i.imgur.com/jR0Z08P.png" width="600">
 </p>
+
+
+## Notes for docker
+
+On some docker installations, the user/password msut be configured via environment variables as shown below.
+
+```
+##############################
+  nodered:
+    image: snuids/nodered:v0.20.8-v10
+    container_name: nodered    
+    environment:
+      - TZ=Europe/Paris
+      - PGHOST=mypostgres
+      - PGDATABASE=mydatabase
+      - PGPASSWORD=mypassword
+      - PGUSER=muuser
+```
