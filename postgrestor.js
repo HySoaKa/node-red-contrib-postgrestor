@@ -69,8 +69,10 @@ module.exports = function(RED) {
             node.error(error);
             });
           try {
+            var renderedtemplate=mustache.render(config.query, template).replace(/&#39;/g,"'");
+            
             msg.payload = yield client.query(
-              mustache.render(config.query, template)
+              renderedtemplate
             );
             node.send(msg);
             client.release();
